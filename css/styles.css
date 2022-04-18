@@ -1,0 +1,68 @@
+.item {
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+  font-size: 20px;
+}
+
+.tomato {
+  background-color: tomato;
+}
+
+.green {
+  background-color: green;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.container {
+  background-color: rgb(202, 202, 185);
+  display: flex;
+  /* by default all flex-items will sit next to each other */
+  flex-direction: row;
+
+  /* items will be stacked */
+  /* flex-direction: column;  */
+
+  /* *-reverse does not match the order of the html - problematic for screen readers*/
+  /* flex-direction: row-reverse; 
+    flex-direction: column-reverse; */
+
+  flex-wrap: wrap; /* flex-items will jump on next line if needed */
+  justify-content: space-evenly;
+
+  min-height: 300px;
+  /* 
+        align-items organizes the flex-items along the vertical axis 
+        For it to work, the contain needs to have a hight.
+    */
+  align-items: flex-start;
+
+  /* for align-content to work your flex items must be located on multiple lines */
+  align-content: space-between;
+
+  /* use gap property to increase spacing among items */
+  gap: 2%;
+}
+
+/* CONTAINER 2 
+CENTERING TEXT HORIZONTALLY AND VERTICALLY 
+*/
+
+.flex-container2 {
+  display: flex;
+  border: 1px solid black;
+  margin-top: 2rem;
+  min-height: 200px;
+}
+
+.flex-item2 {
+  background-color: blueviolet;
+  width: 5rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
